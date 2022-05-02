@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7520F19B281F962200FCE8FB /* avFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7520F19A281F962200FCE8FB /* avFoundation.swift */; };
 		75DE2F83281BBB0400E5EB83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DE2F82281BBB0400E5EB83 /* AppDelegate.swift */; };
 		75DE2F85281BBB0400E5EB83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DE2F84281BBB0400E5EB83 /* SceneDelegate.swift */; };
 		75DE2F87281BBB0400E5EB83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DE2F86281BBB0400E5EB83 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7520F19A281F962200FCE8FB /* avFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avFoundation.swift; sourceTree = "<group>"; };
 		75DE2F7F281BBB0400E5EB83 /* avFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = avFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DE2F82281BBB0400E5EB83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75DE2F84281BBB0400E5EB83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,8 +52,16 @@
 				9F91463768197942874505DE /* Pods-avFoundation.debug.xcconfig */,
 				E8A6C22FB71A28C7CB305133 /* Pods-avFoundation.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7520F19C281F9EE700FCE8FB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				75DE2F9A281BC63800E5EB83 /* SnapKitController.swift */,
+				75DE2F86281BBB0400E5EB83 /* ViewController.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		75DE2F76281BBB0400E5EB83 = {
@@ -75,6 +85,7 @@
 		75DE2F81281BBB0400E5EB83 /* avFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				7520F19C281F9EE700FCE8FB /* Extension */,
 				75DE2F99281BBB1F00E5EB83 /* ViewModel */,
 				75DE2F97281BBB1500E5EB83 /* Model */,
 				75DE2F96281BBB0F00E5EB83 /* View */,
@@ -105,8 +116,7 @@
 		75DE2F99281BBB1F00E5EB83 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				75DE2F86281BBB0400E5EB83 /* ViewController.swift */,
-				75DE2F9A281BC63800E5EB83 /* SnapKitController.swift */,
+				7520F19A281F962200FCE8FB /* avFoundation.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -237,6 +247,7 @@
 				75DE2F9B281BC63800E5EB83 /* SnapKitController.swift in Sources */,
 				75DE2F87281BBB0400E5EB83 /* ViewController.swift in Sources */,
 				75DE2F83281BBB0400E5EB83 /* AppDelegate.swift in Sources */,
+				7520F19B281F962200FCE8FB /* avFoundation.swift in Sources */,
 				75DE2F85281BBB0400E5EB83 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

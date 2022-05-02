@@ -13,12 +13,14 @@ class ViewController: UIViewController {
 
     private lazy var autoLayoutView = AutoLayoutView(frame: self.view.frame)
     private lazy var snapkit = SnapkitController(frame: self.view.frame)
+    private lazy var FoundationOpt = avFoundationOpt(frame: self.view.frame)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view = FoundationOpt
         //self.view = autoLayoutView
-        self.view = snapkit
+//        self.view = snapkit
+        
     }
 }
 
@@ -44,19 +46,19 @@ class AutoLayoutView : UIView{
     }()
 
 
-override init(frame: CGRect) {
-    super.init(frame: frame)
-    
-    self.backgroundColor = .white
-    self.addSubview(titleLabel)
-    self.addSubview(discriptionLabel)
-    
-    self.titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 24).isActive = true
-    self.titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 124).isActive = true
-    
-    self.discriptionLabel.leftAnchor.constraint(equalTo: self.titleLabel.leftAnchor).isActive = true
-    self.discriptionLabel.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 5).isActive = true
-  }
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        self.backgroundColor = .white
+        self.addSubview(titleLabel)
+        self.addSubview(discriptionLabel)
+        
+        self.titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 24).isActive = true
+        self.titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 124).isActive = true
+        
+        self.discriptionLabel.leftAnchor.constraint(equalTo: self.titleLabel.leftAnchor).isActive = true
+        self.discriptionLabel.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 5).isActive = true
+      }
     required init?(coder: NSCoder) {
         fatalError("Error")
     }
